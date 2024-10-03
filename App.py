@@ -8,7 +8,7 @@ st.subheader("Deja volar tu imaginación")
 
 drawing_mode = st.sidebar.selectbox(
     "Selecciona el modo de dibujo",
-    ("freedraw", "circle", "rectangle"),
+    ("freedraw", "line", "rect", "circle", "transform", "polygon", "point"),
 )
 stroke_width = st.sidebar.slider('Selecciona el ancho de línea', 1, 30, 15)
 stroke_color = st.sidebar.color_picker ('Selecciona el color del trazo')# Set background color to white
