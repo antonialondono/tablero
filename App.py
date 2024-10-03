@@ -11,7 +11,7 @@ drawing_mode = st.selectbox(
 )
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
 stroke_color = st.color_picker ('Selecciona el color del trazo')# Set background color to white
-bg_color = st.color_picker ('Selecciona el color del fondo')'#000000'
+bg_color = st.color_picker ('Selecciona el color del fondo')
 
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
