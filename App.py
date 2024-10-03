@@ -1,9 +1,8 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
-st.set_page_config(page_title='Reconocimiento de Dígitos escritos a mano', layout='wide')
-st.title('Reconocimiento de Dígitos escritos a mano')
-st.subheader("Dibuja el digito en el panel  y presiona  'Predecir'")
+st.set_page_config(page_title='Tablero', layout='wide')
+st.title('Deja volar tu imaginación')
 
 
 drawing_mode = "freedraw"
