@@ -5,13 +5,13 @@ st.set_page_config(page_title='Tablero', layout='wide')
 st.title('Deja volar tu imaginación')
 
 
-drawing_mode = "freedraw"
+drawing_mode = st.selectbox('Selecciona un modo de dibujo',("freedraw, "circle", "rectangle"))
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-stroke_color = st.color_picker ('Selecciona el color')# Set background color to white
-bg_color = '#000000'
+stroke_color = st.color_picker ('Selecciona el color del trazo')# Set background color to white
+bg_color = st.color_picker ('Selecciona el color del fondo')'#000000'
 
 canvas_result = st_canvas(
-    fill_color="rgba(0, 1, 0, 0.3)",  # Fixed fill color with some opacity
+    fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
