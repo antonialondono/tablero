@@ -6,13 +6,13 @@ st.title('Dibujo libre!!!')
 st.subheader("Deja volar tu imaginación'")
 
 
-drawing_mode = st.selectbox(
+drawing_mode = st.sidebar.selectbox(
     "Selecciona el modo de dibujo",
     ("freedraw", "circle", "rectangle"),
 )
-stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-stroke_color = st.color_picker ('Selecciona el color del trazo')# Set background color to white
-bg_color = st.color_picker ('Selecciona el color del fondo')
+stroke_width = st.sidebar.slider('Selecciona el ancho de línea', 1, 30, 15)
+stroke_color = st.sidebar.color_picker ('Selecciona el color del trazo')# Set background color to white
+bg_color = st.sidebar.color_picker ('Selecciona el color del fondo')
 
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
