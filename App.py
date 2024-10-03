@@ -2,7 +2,8 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 st.set_page_config(page_title='Tablero', layout='wide')
-st.title('Deja volar tu imaginación')
+st.title('Dibujo libre!!!')
+st.subheader("Deja volar tu imaginación'")
 
 
 drawing_mode = st.selectbox(
