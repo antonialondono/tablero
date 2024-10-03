@@ -7,7 +7,7 @@ st.title('Deja volar tu imaginación')
 
 drawing_mode = "freedraw"
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-stroke_color = st.colorpicker ('Selecciona el color')# Set background color to white
+stroke_color = st.color_picker ('Selecciona el color')# Set background color to white
 bg_color = '#000000'
 
 canvas_result = st_canvas(
