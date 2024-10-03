@@ -1,6 +1,11 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
+st.set_page_config(page_title='Reconocimiento de Dígitos escritos a mano', layout='wide')
+st.title('Reconocimiento de Dígitos escritos a mano')
+st.subheader("Dibuja el digito en el panel  y presiona  'Predecir'")
+
+
 drawing_mode = "freedraw"
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
 stroke_color = st.colorpicker ('Selecciona el color')# Set background color to white
